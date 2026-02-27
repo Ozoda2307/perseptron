@@ -84,3 +84,21 @@ h2{
     color: #fbfcfb;
     font-size: 24px;
 }
+
+
+@media screen and (max-width: 992px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 576px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+}
