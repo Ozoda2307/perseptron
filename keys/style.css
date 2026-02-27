@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+
+  background:
+    /* 🌕 Oy (tun qismi - o'ng taraf) */
+    radial-gradient(circle at 75% 25%, #ffffff 0%, #f5f3ce 40px, transparent 60px),
+
+    /* ☀️ Quyosh (kun qismi - chap taraf) */
+    radial-gradient(circle at 25% 25%, #ffd700 0%, #ffae00 60px, transparent 80px),
+
+    /* ☁️ Bulutlar (kun taraf) */
+    radial-gradient(circle at 20% 40%, rgba(255,255,255,0.8) 0%, transparent 60px),
+    radial-gradient(circle at 35% 60%, rgba(255,255,255,0.7) 0%, transparent 70px),
+
+    /* ✨ Yulduzlar (tun taraf) */
+    radial-gradient(2px 2px at 70% 40%, white, transparent),
+    radial-gradient(2px 2px at 85% 60%, white, transparent),
+    radial-gradient(2px 2px at 90% 30%, white, transparent),
+    radial-gradient(2px 2px at 80% 75%, white, transparent),
+
+    /* 🌅 Asosiy fon: chap kun, o'ng tun */
+    linear-gradient(
+      to right,
+      #4facfe 0%,     /* moviy kun */
+      #87ceeb 40%,    /* och moviy */
+      #1b2735 60%,    /* tun boshlanishi */
+      #090a0f 100%    /* to‘liq tun */
+    );
+}
+button{
+    width: 150px;
+    height: 50px;
+    padding: 20px;
+    background: #06fa06;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+.key{
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+.keys{
+    position: absolute;
+    top: 300px;
+    left: 700px;
+}

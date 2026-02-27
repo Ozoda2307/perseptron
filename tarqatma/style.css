@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  /* asosiy fon */
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+}
+
+/* neon doiralar */
+body::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,0,150,0.6), transparent 70%);
+  top: 10%;
+  left: 20%;
+  filter: blur(50px);
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(0,255,255,0.6), transparent 70%);
+  bottom: 10%;
+  right: 20%;
+  filter: blur(50px);
+}
+button{
+    position: absolute;
+    top: 220px;
+    left: 410px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #8ad0ee;
+    background: #c36ef5;
+    color: #ffffff;
+}
+.kraw{
+    position: absolute;
+    top: 380px;
+    left: 840px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #8ad0ee;
+    background: #c36ef5;
+    color: #ffffff;
+}

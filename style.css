@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+
+  /* osmon va bulutlar */
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 20%, transparent 40%),
+    radial-gradient(circle at 60% 20%, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.35) 25%, transparent 45%),
+    radial-gradient(circle at 80% 40%, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.3) 20%, transparent 40%),
+    radial-gradient(circle at 40% 70%, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.3) 25%, transparent 45%),
+    linear-gradient(to bottom, #1e90ff, #87ceeb, #cfefff);
+
+  background-size: 400px 400px, 500px 500px, 600px 600px, 550px 550px, 100% 100%;
+
+  animation: skyMove 60s linear infinite;
+}
+
+/* harakat animatsiyasi */
+@keyframes skyMove {
+  0% {
+    background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
+  }
+  100% {
+    background-position: 1000px 0, 800px 0, 600px 0, 400px 0, 0 0;
+  }
+}
+
+
+h1{
+    color: #ff0404;
+    text-align: center;
+    padding: 20px;
+}
+h2{
+    color: #54ff04;
+    text-align: center;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contener{
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f80303;
+    box-shadow: 4px 4px 4px 4px rgba(214, 163, 163, 0.75);
+}
+.contener a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    font-size: 30px;
+    color: #fbfcfb;
+}
+.kv3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 50px;
+}
+.contner{
+    width: 150px;
+    height: 100px;
+    box-shadow: 4px 4px 4px 4px rgba(149, 241, 157, 0.75);
+    background: #3efa04;
+}
+.contner a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    color: #fbfcfb;
+    font-size: 24px;
+}
